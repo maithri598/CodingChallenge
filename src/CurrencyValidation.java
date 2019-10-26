@@ -32,13 +32,16 @@ public class CurrencyValidation {
 					amount = (float) (amount / 10);
 					break;
 				}
-				
 			} 
 			
 		} catch (IllegalArgumentException e) {
+			amount =0f;
 			System.out.println("Invalid currency");
+			
 		}
+
 		return amount;
+		
 	}
 }
 
